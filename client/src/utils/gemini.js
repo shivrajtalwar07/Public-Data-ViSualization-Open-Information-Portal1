@@ -1,5 +1,5 @@
-const GEMINI_API_KEY = "AIzaSyA6dcTfEx39HFdhO8yvej_0N9ie8Uwkxzs";
-const BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+const GEMINI_API_KEY = "AIzaSyBk7paPnpP523j2LKgRegRZFCCMOKaHmrM";
+const BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
 export async function fetchGeminiData(prompt) {
     try {

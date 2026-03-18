@@ -477,8 +477,8 @@ function CitizenDashboard({ selectedCities, showNotif, customData }) {
 
     try {
       // Inline fetch to avoid import issues in this large file
-      const API_KEY = "AIzaSyBRtcF6Q8gQFTbCFXjQLtuXC3Yq1tnNcQI";
-      const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent";
+      const API_KEY = "AIzaSyBk7paPnpP523j2LKgRegRZFCCMOKaHmrM";
+      const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
       const response = await fetch(`${API_URL}?key=${API_KEY}`, {
         method: "POST",
@@ -1220,7 +1220,7 @@ function AdminPanel({ showNotif, onDataUpload, uploads, setUploads }) {
     ];
 
     onDataUpload({ yearData: sampleYearData, pieData: samplePieData, barData: sampleBarData });
-    
+
     // Also add to the table so it's "stored"
     setUploads(u => [{
       id: u.length + 1,
@@ -1470,7 +1470,7 @@ function Chartbot() {
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const API_KEY = "AIzaSyCxx6tlvJ6P3mHSqTjBoJTVOshfcWhBjjA";
+  const API_KEY = "AIzaSyBk7paPnpP523j2LKgRegRZFCCMOKaHmrM";
   const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
   const scrollToBottom = () => {
